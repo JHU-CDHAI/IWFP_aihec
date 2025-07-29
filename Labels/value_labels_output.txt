@@ -1,0 +1,508 @@
+------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Volumes/USB DRIVE/value_labels_output.txt
+  log type:  text
+ opened on:  28 Jul 2025, 15:33:51
+
+. 
+. * Loop over all variables
+
+. ds
+grade      a18        a53_a54    a59        a88_a79    a94_a85    a107_a95   a113_a101  a119_a107  a125_a113  a132_a120
+a4         a20        a54        a60        a89_a80    a95_a86    a108_a96   a114_a102  a120_a108  a126_a114
+a5         a48_a49    a55        a61        a90_a81    a96_a87    a109_a97   a115_a103  a121_a109  a127_a115
+a7         a50_a51    a56        a62        a91_a82    a97_a88    a110_a98   a116_a104  a122_a110  a128_a116
+a9         a51_a52    a57        a63_a56    a92_a83    a98_a89    a111_a99   a117_a105  a123_a111  a130_a118
+a10        a52_a53    a58        a87_a78    a93_a84    a106_a94   a112_a100  a118_a106  a124_a112  a131_a119
+
+. foreach var in `r(varlist)' {
+  2.     * Check if the variable has a value label
+.     local valuelabel : value label `var'
+  3.     
+.     * If it has a value label, list it
+.     if "`valuelabel'" != "" {
+  4.         di "========== Variable: `var' (Label: `valuelabel') =========="
+  5.         label list `valuelabel'
+  6.         di ""
+  7.     }
+  8. }
+========== Variable: grade (Label: grade) ==========
+grade:
+           6 6th
+           7 7th
+           8 8th
+           9 9th
+          10 10th
+          11 11th
+          12 12th
+          13 Non-traditional
+
+========== Variable: a4 (Label: a4) ==========
+a4:
+           1 Male
+           2 Female
+
+========== Variable: a5 (Label: a5) ==========
+a5:
+           1 No, I am not transgender
+           2 Yes, I am transgender
+           3 I am not sure if I am transgender
+           4 Decline to respond
+
+========== Variable: a7 (Label: a7) ==========
+a7:
+           1 American Indian or Alaska Native
+           2 Asian
+           3 Black or African American
+           4 Native Hawaiian or Pacific Islander
+           5 White
+           6 Mixed (two or more) races
+
+========== Variable: a9 (Label: a9) ==========
+a9:
+           1 A home with one or more parents/guardian
+           2 Other relative's home
+           3 A home with more than one family
+           4 Friend's home
+           5 Foster home, group care, or waiting placement
+           6 Hotel or motel
+           7 Shelter, car, campground, or other transitional or temporary housing
+           8 Other living arrangement
+
+========== Variable: a10 (Label: a10) ==========
+a10:
+           1 Did not finish high school
+           2 Graduated from high school
+           3 Attended college but did not complete four-year degree
+           4 Graduated from college
+           5 Don't know
+
+========== Variable: a18 (Label: a18) ==========
+a18:
+           1 Straight (not gay)
+           2 Gay or Lesbian
+           3 Bisexual
+           4 I am not sure yet
+           5 Something else
+           6 Decline to respond
+
+========== Variable: a20 (Label: a20) ==========
+a20:
+           1 Mostly A's
+           2 A's and B's
+           3 Mostly B's
+           4 B's and C's
+           5 Mostly C's
+           6 C's and D's
+           7 Mostly D's
+           8 Mostly F's
+
+========== Variable: a48_a49 (Label: a48_a49) ==========
+a48_a49:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a50_a51 (Label: a50_a51) ==========
+a50_a51:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a51_a52 (Label: a51_a52) ==========
+a51_a52:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a52_a53 (Label: a52_a53) ==========
+a52_a53:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a53_a54 (Label: a53_a54) ==========
+a53_a54:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a54 (Label: a54) ==========
+a54:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a55 (Label: a55) ==========
+a55:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a56 (Label: a56) ==========
+a56:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a57 (Label: a57) ==========
+a57:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a58 (Label: a58) ==========
+a58:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a59 (Label: a59) ==========
+a59:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a60 (Label: a60) ==========
+a60:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a61 (Label: a61) ==========
+a61:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a62 (Label: a62) ==========
+a62:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a63_a56 (Label: a63_a56) ==========
+a63_a56:
+           1 0 times
+           2 1 time
+           3 2 times
+           4 3 times
+           5 4-6 times
+           6 7 or more times
+
+========== Variable: a87_a78 (Label: a87_a78) ==========
+a87_a78:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a88_a79 (Label: a88_a79) ==========
+a88_a79:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a89_a80 (Label: a89_a80) ==========
+a89_a80:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a90_a81 (Label: a90_a81) ==========
+a90_a81:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a91_a82 (Label: a91_a82) ==========
+a91_a82:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a92_a83 (Label: a92_a83) ==========
+a92_a83:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a93_a84 (Label: a93_a84) ==========
+a93_a84:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a94_a85 (Label: a94_a85) ==========
+a94_a85:
+           1 Great
+           2 Moderate
+           3 Slight
+           4 None
+
+========== Variable: a95_a86 (Label: a95_a86) ==========
+a95_a86:
+           1 Very difficult
+           2 Fairly difficult
+           3 Fairly easy
+           4 Very easy
+           5 Don't know
+
+========== Variable: a96_a87 (Label: a96_a87) ==========
+a96_a87:
+           1 Very difficult
+           2 Fairly difficult
+           3 Fairly easy
+           4 Very easy
+           5 Don't know
+
+========== Variable: a97_a88 (Label: a97_a88) ==========
+a97_a88:
+           1 Very difficult
+           2 Fairly difficult
+           3 Fairly easy
+           4 Very easy
+           5 Don't know
+
+========== Variable: a98_a89 (Label: a98_a89) ==========
+a98_a89:
+           1 Very difficult
+           2 Fairly difficult
+           3 Fairly easy
+           4 Very easy
+           5 Don't know
+
+========== Variable: a106_a94 (Label: a106_a94) ==========
+a106_a94:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a107_a95 (Label: a107_a95) ==========
+a107_a95:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a108_a96 (Label: a108_a96) ==========
+a108_a96:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a109_a97 (Label: a109_a97) ==========
+a109_a97:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a110_a98 (Label: a110_a98) ==========
+a110_a98:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a111_a99 (Label: a111_a99) ==========
+a111_a99:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a112_a100 (Label: a112_a100) ==========
+a112_a100:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a113_a101 (Label: a113_a101) ==========
+a113_a101:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a114_a102 (Label: a114_a102) ==========
+a114_a102:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a115_a103 (Label: a115_a103) ==========
+a115_a103:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a116_a104 (Label: a116_a104) ==========
+a116_a104:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a117_a105 (Label: a117_a105) ==========
+a117_a105:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a118_a106 (Label: a118_a106) ==========
+a118_a106:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a119_a107 (Label: a119_a107) ==========
+a119_a107:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a120_a108 (Label: a120_a108) ==========
+a120_a108:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a121_a109 (Label: a121_a109) ==========
+a121_a109:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a122_a110 (Label: a122_a110) ==========
+a122_a110:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a123_a111 (Label: a123_a111) ==========
+a123_a111:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a124_a112 (Label: a124_a112) ==========
+a124_a112:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a125_a113 (Label: a125_a113) ==========
+a125_a113:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a126_a114 (Label: a126_a114) ==========
+a126_a114:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a127_a115 (Label: a127_a115) ==========
+a127_a115:
+           1 0 times
+           2 1 time
+           3 2 to 3 times
+           4 4 or more times
+
+========== Variable: a128_a116 (Label: a128_a116) ==========
+a128_a116:
+           1 0 times (never)
+           2 1 time
+           3 2-3 times
+           4 4 or more times
+
+========== Variable: a130_a118 (Label: a130_a118) ==========
+a130_a118:
+           1 No
+           2 Yes
+
+========== Variable: a131_a119 (Label: a131_a119) ==========
+a131_a119:
+           1 No
+           2 Yes
+
+========== Variable: a132_a120 (Label: a132_a120) ==========
+a132_a120:
+           1 No
+           2 Yes
+
+
+. 
+. * Close the log file
+
+. log close
+      name:  <unnamed>
+       log:  /Volumes/USB DRIVE/value_labels_output.txt
+  log type:  text
+ closed on:  28 Jul 2025, 15:33:52
+------------------------------------------------------------------------------------------------------------------------------------------
